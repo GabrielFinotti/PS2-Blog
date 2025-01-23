@@ -17,11 +17,10 @@ import { UserRegister } from '../../../interfaces/user/user-register';
 import { RegisterService } from '../../../services/auth/user/register.service';
 
 @Component({
-  selector: 'app-register-form',
-  standalone: true,
-  imports: [ReactiveFormsModule, NgClass],
-  templateUrl: './register-form.component.html',
-  styleUrl: './register-form.component.scss',
+    selector: 'app-register-form',
+    imports: [ReactiveFormsModule, NgClass],
+    templateUrl: './register-form.component.html',
+    styleUrl: './register-form.component.scss'
 })
 export class RegisterFormComponent {
   @ViewChildren('input') private inputs!: QueryList<

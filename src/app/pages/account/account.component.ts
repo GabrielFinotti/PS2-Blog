@@ -6,11 +6,10 @@ import { filter } from 'rxjs';
 import { UpdateImageService } from '../../services/auth/user/update-image.service';
 
 @Component({
-  selector: 'app-account',
-  standalone: true,
-  imports: [UpdateFormComponent],
-  templateUrl: './account.component.html',
-  styleUrl: './account.component.scss',
+    selector: 'app-account',
+    imports: [UpdateFormComponent],
+    templateUrl: './account.component.html',
+    styleUrl: './account.component.scss'
 })
 export class AccountComponent implements OnInit {
   @ViewChild('input') private imgFile!: ElementRef<HTMLInputElement>;

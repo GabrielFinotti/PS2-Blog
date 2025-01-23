@@ -11,11 +11,10 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-game-card',
-  standalone: true,
-  imports: [],
-  templateUrl: './game-card.component.html',
-  styleUrl: './game-card.component.scss',
+    selector: 'app-game-card',
+    imports: [],
+    templateUrl: './game-card.component.html',
+    styleUrl: './game-card.component.scss'
 })
 export class GameCardComponent implements OnChanges, AfterViewInit {
   @ViewChildren('card') private cards!: QueryList<ElementRef<HTMLDivElement>>;

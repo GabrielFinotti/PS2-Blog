@@ -5,11 +5,10 @@ import { StringForm } from '../../enums/string-form';
 
 
 @Component({
-  selector: 'app-access',
-  standalone: true,
-  imports: [LoginFormComponent, RegisterFormComponent],
-  templateUrl: './access.component.html',
-  styleUrl: './access.component.scss',
+    selector: 'app-access',
+    imports: [LoginFormComponent, RegisterFormComponent],
+    templateUrl: './access.component.html',
+    styleUrl: './access.component.scss'
 })
 export class AccessComponent {
   public isToggle!: boolean;

@@ -15,11 +15,10 @@ import { UpdateService } from '../../../services/auth/user/update.service';
 import { UserUpdate } from '../../../interfaces/user/user-update';
 
 @Component({
-  selector: 'app-update-form',
-  standalone: true,
-  imports: [ReactiveFormsModule, NgClass],
-  templateUrl: './update-form.component.html',
-  styleUrl: './update-form.component.scss',
+    selector: 'app-update-form',
+    imports: [ReactiveFormsModule, NgClass],
+    templateUrl: './update-form.component.html',
+    styleUrl: './update-form.component.scss'
 })
 export class UpdateFormComponent implements OnInit {
   protected updateForm!: FormGroup;

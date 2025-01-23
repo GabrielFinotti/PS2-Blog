@@ -7,11 +7,10 @@ import { GameCardComponent } from '../../components/cards/game-card/game-card.co
 import { GamesListService } from '../../services/games/games-list.service';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [NgClass, ReactiveFormsModule, GameCardComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+    selector: 'app-home',
+    imports: [NgClass, ReactiveFormsModule, GameCardComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
   protected search!: FormGroup;

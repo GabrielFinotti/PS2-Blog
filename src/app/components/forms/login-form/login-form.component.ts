@@ -24,11 +24,10 @@ import { Login } from '../../../interfaces/response/login';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login-form',
-  standalone: true,
-  imports: [ReactiveFormsModule, NgClass],
-  templateUrl: './login-form.component.html',
-  styleUrl: './login-form.component.scss',
+    selector: 'app-login-form',
+    imports: [ReactiveFormsModule, NgClass],
+    templateUrl: './login-form.component.html',
+    styleUrl: './login-form.component.scss'
 })
 export class LoginFormComponent implements OnInit {
   @ViewChildren('input') private inputs!: QueryList<
